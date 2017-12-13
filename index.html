@@ -7,6 +7,8 @@
         Hover your mouse over me for a few seconds
         to see my dynamically bound title
       </span>
+      <!-- IF app.seen is false, then the entire div starting from app does not show -->
+      <!-- It doesn't seem to check app2.seen -->
       <div class="app2" v-if="seen">Bye</div>
     </div>
     <div class="app2" v-if="seen">Hi</div>
